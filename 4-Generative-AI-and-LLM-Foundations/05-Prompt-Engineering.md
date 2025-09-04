@@ -1,0 +1,101 @@
+# Prompt Engineering - Learning Notes
+
+## Overview
+This lesson covers the concept of **prompt engineering**, its challenges, and why it is important when working with large language models (LLMs). It explains **instruction tuning**, **reinforcement learning from human feedback (RLHF)**, and two successful prompting strategies: **in-context learning with few-shot prompting** and **chain-of-thought prompting**. Finally, it addresses the problem of **hallucination** in LLMs and discusses current methods to reduce it.
+
+---
+
+## Key Concepts
+- **Prompt**: Input or initial text provided to the LLM.  
+- **Prompt Engineering**: Iteratively refining a prompt to elicit a specific style of response.  
+- **Instruction Tuning**: Fine-tuning LLMs on prompt-response pairs to align model outputs with user expectations.  
+- **RLHF (Reinforcement Learning from Human Feedback)**: Training process where human feedback is used to align LLM behavior with human preferences.  
+- **In-Context Learning**: Conditioning an LLM with examples of a task without changing model parameters.  
+- **Few-Shot Prompting**: Providing k examples of a task (0-shot, 1-shot, k-shot).  
+- **Chain-of-Thought Prompting**: Encouraging reasoning steps before the final answer.  
+- **Hallucination**: Non-factual or ungrounded model outputs, sometimes subtle and difficult to detect.  
+
+---
+
+## Detailed Notes
+
+### Definition of Prompt and Prompt Engineering
+- **Prompt**: Input or initial text given to an LLM.  
+- **Prompt Engineering**: Process of refining prompts to guide models toward a desired output.  
+- LLMs predict the next token or sequence of words based on prior context.  
+- Example: *Four score and seven years ago...* → Model completes with text from Gettysburg Address.  
+
+### Challenges with Completion LLMs
+- Completion LLMs are trained to predict the next word from internet text.  
+- They do not naturally follow instructions or answer questions directly.  
+- Desired responses require careful prompt formulation, which is challenging.  
+
+### Instruction Tuning
+- Goal: Align LLMs with user tasks.  
+- Approach: Fine-tuning pre-trained LLMs with instruction-response pairs.  
+- Example: **Llama 2** models  
+  - Trained on ~2 trillion tokens.  
+  - Llama 2 Chat: additionally fine-tuned on ~28,000 prompt-response pairs.  
+- **RLHF (Reinforcement Learning from Human Feedback)**:  
+  - Human annotators write prompts and compare outputs.  
+  - Feedback trains a reward model.  
+  - Reward model automates preference decisions.  
+- Most modern LLMs are instruction-tuned to follow user tasks instead of only completing text.  
+
+### Successful Prompting Strategies
+
+#### In-Context Learning & Few-Shot Prompting
+- **In-Context Learning**: Conditioning LLMs with task demonstrations.  
+- Not traditional learning (parameters unchanged).  
+- **Few-Shot Prompting**: Providing explicit examples of the task in the prompt.  
+  - **0-shot**: No examples.  
+  - **1-shot**: One example.  
+  - **k-shot**: k examples.  
+- Example: Translation task with **3-shot prompting**.  
+  - Instruction: *Translate English to French*.  
+  - Three examples provided.  
+  - Prompt: *Translate "cheese"*.  
+- Research shows **few-shot prompting improves results over 0-shot prompting**.  
+
+#### Chain-of-Thought Prompting
+- Used for complex tasks.  
+- Encourages the model to reason step-by-step before giving the final answer.  
+- Example:  
+  - Prompt: *Roger starts with 5 tennis balls. He buys 2 more cans, each with 3 balls. How many total?*  
+  - Response: *5 + (2 × 3) = 11 → Answer: 11*.  
+- Another example:  
+  - Prompt: *Oracle cafeteria had 20 bananas, used 10, bought 8 more. How many left?*  
+  - Response: *20 - 10 = 10; 10 + 8 = 18 → Answer: 18*.  
+- Without chain-of-thought prompting, LLMs may return incorrect answers.  
+
+### Hallucination
+- **Definition**: Generated text that is non-factual, ungrounded, or nonsensical.  
+- Example: Claiming Americans gradually adopted driving on the left side of the road (factually incorrect).  
+- Hallucinations can be:  
+  - Obvious and easy to spot.  
+  - Subtle and difficult to identify.  
+- Mitigation:  
+  - Retrieval-augmented systems hallucinate less than 0-shot LLMs.  
+  - No reliable method currently exists to eliminate hallucination.  
+  - Active research ongoing on measuring groundedness of LLM outputs.  
+
+---
+
+## Important Terms
+- **Prompt**: Input text provided to an LLM.  
+- **Prompt Engineering**: Refining prompts for desired outputs.  
+- **Instruction Tuning**: Fine-tuning models on prompt-response pairs.  
+- **RLHF (Reinforcement Learning from Human Feedback)**: Training with human feedback and reward models.  
+- **In-Context Learning**: Conditioning with examples, without changing model parameters.  
+- **Few-Shot Prompting**: Providing k examples (0-shot, 1-shot, etc.) in prompts.  
+- **Chain-of-Thought Prompting**: Breaking reasoning into smaller steps.  
+- **Hallucination**: Non-factual or ungrounded text generated by LLMs.  
+
+---
+
+## Summary
+- **Prompt Engineering** involves refining input prompts to guide LLMs toward desired responses.  
+- Completion LLMs focus on next-word prediction, not direct task execution, creating challenges.  
+- **Instruction Tuning** and **RLHF** align LLMs with user expectations.  
+- **In-Context Learning with Few-Shot Prompting** and **Chain-of-Thought Prompting** are effective strategies.  
+- **Hallucination** remains a significant challenge, with mitigation strategies like retrieval augmentation but no complete solutions yet.  
