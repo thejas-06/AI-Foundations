@@ -1,7 +1,7 @@
 # AI Tasks and Data - Learning Notes
 
 ## Overview
-This video covers AI tasks and data across three main domains: **language**, **audio and speech**, and **vision**.  
+This video covers AI tasks and data across three main domains: "**language**", "**audio and speech**", and "**vision**".  
 It explains different types of AI tasks (text-related, audio-related, image-related, and generative AI), how data in each domain is structured, and the deep learning model architectures used to process them. Additional AI tasks such as anomaly detection, recommendations, and forecasting are also discussed.
 
 ---
@@ -109,26 +109,6 @@ It explains different types of AI tasks (text-related, audio-related, image-rela
 - **Forecasting**  
   - Requires **time series data**  
   - Applications: weather forecasting, stock price prediction  
-
----
-
-## Important Terms
-- **Tokenization**: Converting words into numbers for training models  
-- **Padding**: Making sentence lengths equal  
-- **Embedding**: Representation showing similarity between words/sentences  
-- **Dot similarity / Cosine similarity**: Methods to measure similarity  
-- **Sample rate**: Number of audio samples per second (e.g., 44.1 kHz)  
-- **Bit depth**: Number of bits per sample, indicating richness of audio information  
-- **Pixels**: Smallest unit of an image, grayscale or color  
-- **RNN (Recurrent Neural Network)**: Sequential data processing with hidden states  
-- **LSTM (Long Short-Term Memory)**: Sequential processing with gates for better context retention  
-- **Transformers**: Parallel processing with self-attention  
-- **CNN (Convolutional Neural Network)**: Learns visual patterns in images  
-- **YOLO (You Only Look Once)**: Real-time object detection  
-- **GAN (Generative Adversarial Network)**: Generates realistic images  
-- **Variational Autoencoders (VAEs)**: Generative models for audio/speech  
-- **Waveform Models**: Process raw audio waveforms  
-- **Siamese Networks**: Compare similarity between inputs  
 
 ---
 
