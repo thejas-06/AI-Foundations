@@ -83,19 +83,6 @@ This module explains the difference between **Artificial Intelligence (AI)**, **
 
 ---
 
-## Important Terms  
-
-- **Artificial Intelligence (AI):** Broad concept of machines performing human-like intelligence tasks.  
-- **Machine Learning (ML):** Subset of AI using algorithms to learn from data.  
-- **Algorithm:** Rules, mathematical equations, or procedures followed by ML models.  
-- **Deep Learning (DL):** Subfield of ML using deep neural networks.  
-- **Supervised Learning:** Learning from labeled data for prediction/classification.  
-- **Unsupervised Learning:** Discovering patterns in unlabeled data (e.g., clustering).  
-- **Reinforcement Learning:** Learning by interacting with environment and feedback.  
-- **Neural Networks:** Layered network of connected neurons for learning.  
-- **Functional Approximation:** Estimating hidden functions using data.  
-- **Generative AI:** Subset of ML that generates new creative content.  
-
 ## Summary  
 This module introduced **AI, ML, and DL** with practical examples.  
 - **AI**: Broad system intelligence (e.g., self-driving cars).  
