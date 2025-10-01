@@ -12,16 +12,6 @@ It covers:
 
 ---
 
-## Key Concepts  
-- **Artificial Intelligence (AI)**: Machines imitating the cognitive and problem-solving capabilities of human intelligence.  
-- **Human Intelligence**: Ability to learn, reason, communicate, plan, and create.  
-- **Artificial General Intelligence (AGI)**: Machines replicating full human sensory, motor, learning, and intelligence skills.  
-- **Narrow AI**: Applying AGI to specific objectives (e.g., spam detection, product recommendation).  
-- **Importance of AI**: Handles massive data, automates routine tasks, and acts as a creative partner.  
-- **Domains of AI**: Language, Vision, Speech, Product Recommendations, Anomaly Detection, Learning by Reward, Forecasting, and Generative AI.  
-
----
-
 ## Detailed Notes  
 
 ### 1. Defining Artificial Intelligence  
@@ -76,15 +66,6 @@ It covers:
 - **Learning by Reward** → self-driven cars  
 - **Forecasting** → weather forecasting  
 - **Generative AI** → generating content like images from text  
-
----
-
-## Important Terms  
-- **Artificial Intelligence (AI)**: Narrow applications of machine intelligence to solve problems.  
-- **Human Intelligence**: Core intellectual capabilities enabling reasoning, learning, and creativity.  
-- **Artificial General Intelligence (AGI)**: Machines replicating full human intelligence and adaptability.  
-- **Routine Tasks**: Repetitive, high-volume tasks automated by AI (e.g., approvals, claims).  
-- **Domains of AI**: Specific areas like language, vision, speech, forecasting, and anomaly detection.  
 
 ---
 
