@@ -77,19 +77,6 @@ Applies pretrained models to analyze a block of text. Capabilities include:
 
 ---
 
-## Important Terms  
-- **Image Classification**: Assigning category labels to an image.  
-- **Object Detection**: Identifying objects in an image with bounding boxes.  
-- **Text Detection**: Extracting written content from an image.  
-- **Document AI / Document Understanding**: Extracting structured information (text, key-value pairs, tables) from documents.  
-- **Confidence Score**: Probability assigned by the model indicating certainty of detection.  
-- **Entities**: Identified items within text (e.g., products, events).  
-- **Aspect-based Sentiment**: Sentiment associated with a particular subject or entity.  
-- **Sentence-level Sentiment**: Overall polarity (positive, negative, neutral) of a sentence.  
-- **PII (Personal Identifiable Information)**: Sensitive data like names, dates, numbers, or identifiers.  
-
----
-
 ## Summary  
 The **OCI Vision AI Service** provides capabilities like image classification, object detection, text detection, and document analysis, with results including confidence scores, labels, and structured extraction.  
 The **OCI Language AI Service** offers text analysis (language detection, classification, entities, key phrases, sentiment, PII) and text translation across multiple languages. Users can also train **custom models**.  
