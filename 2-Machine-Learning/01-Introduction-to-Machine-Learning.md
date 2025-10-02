@@ -86,21 +86,7 @@ In this lesson, we will learn:
 - **Reinforcement Learning Applications**:  
   - Automated robots  
   - Autonomous driving cars  
-  - Playing games  
-
----
-
-## Important Terms
-- **Machine Learning**: AI subset where systems learn and predict outcomes without explicit programming.  
-- **Algorithms**: Logic enabling machines to learn from data.  
-- **Features**: Attributes describing an input (e.g., color, texture).  
-- **Labels**: Correct category or output linked to input data.  
-- **Training Dataset**: Data with features and labels used to train the model.  
-- **Trained Model**: Model that has learned relationships from data.  
-- **Inference**: Making predictions using a trained model.  
-- **Supervised Learning**: Uses labeled data for training.  
-- **Unsupervised Learning**: Explores datasets without labels.  
-- **Reinforcement Learning**: Learns from outcomes to make choices.  
+  - Playing games   
 
 ---
 
